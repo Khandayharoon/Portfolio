@@ -1,6 +1,6 @@
 import { useState } from "react"; // Import useState to manage hover state
 import { GrServices } from "react-icons/gr";
-import Carousel from "../Carousel/Carousel";
+// import Carousel from "../Carousel/Carousel";
 
 function Myservices() {
   // State to track which card is hovered
@@ -78,7 +78,7 @@ function Myservices() {
       </div>{" "}
 
       <div className="w-full h-screen bg-slate-500">
-      <Carousel />
+      {/* <Carousel /> */}
       </div>
     </div>
   );

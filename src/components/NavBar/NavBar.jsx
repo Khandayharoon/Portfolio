@@ -2,7 +2,7 @@ import "./navBar.css";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between top-5 sticky backdrop-blur-lg navBar mb-4 z-50">
+    <div className="flex justify-between top-5 sticky backdrop-blur-lg navBar z-50">
       <div>
         {/* Logo */}
         <div className="flex space-x-2 text-7xl items-center logoBar">
@@ -21,35 +21,35 @@ export default function NavBar() {
         <ul className="flex space-x-7 navLinks">
           <li>
             {" "}
-            <a className="text-2xl" href="">
+            <a className="text-xl" href="">
               {" "}
               Projects{" "}
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a className="text-2xl" href="">
+            <a className="text-xl" href="">
               {" "}
               Services{" "}
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a className="text-2xl" href="">
+            <a className="text-xl" href="">
               {" "}
               About{" "}
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a className="text-2xl" href="">
+            <a className="text-xl" href="">
               {" "}
               Collaboration{" "}
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a className="text-2xl" href="">
+            <a className="text-xl" href="">
               {" "}
               Blog{" "}
             </a>{" "}
