@@ -14,8 +14,8 @@ function LandingPage() {
       <ProjectsSection />
       <Myservices />
       <WorkWithUS />
-      <Discover/>
-      <Footer/>
+      <Discover />
+      <Footer />
     </div>
   );
 }

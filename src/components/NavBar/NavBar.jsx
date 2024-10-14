@@ -18,7 +18,7 @@ export default function NavBar() {
 
       <div>
         {/* Nav Links */}
-        <ul className="flex space-x-7 navLinks">
+        <ul className="flex space-x-7 navLinks font-reader-light">
           <li>
             {" "}
             <a className="text-xl" href="">

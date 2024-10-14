@@ -76,10 +76,7 @@ function Myservices() {
           <GrServices style={{ transform: "scaleX(-1)", fontSize: "1.5em" }} />
         </button>
       </div>{" "}
-
-      <div className="w-full h-screen bg-slate-500">
-      {/* <Carousel /> */}
-      </div>
+      <div className="w-full h-screen bg-slate-500">{/* <Carousel /> */}</div>
     </div>
   );
 }
