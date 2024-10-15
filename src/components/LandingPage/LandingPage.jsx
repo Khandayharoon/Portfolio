@@ -4,13 +4,23 @@ import Hero from "../Hero/Hero";
 import Myservices from "../Myservices/Myservices";
 import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
+import ParticleAnimation from "../Try/ParticleAnimation";
+import RopeAnimation from "../Try/RopeAnimation";
+
 import WorkWithUS from "../WorkWithUS/WorkWithUS";
 
 function LandingPage() {
   return (
     <div>
       <NavBar />
-      <Hero />
+      <div>
+        <div>
+          <ParticleAnimation />
+        </div>
+        <div className="absolute top-10 left-48 mt-16">
+          <Hero />
+        </div>
+      </div>
       <ProjectsSection />
       <Myservices />
       <WorkWithUS />
