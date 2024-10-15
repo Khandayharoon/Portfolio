@@ -63,7 +63,7 @@ function Hero() {
       </div>
 
       {/* Secondary content */}
-      <div className="flex flex-col w-1/2 items-center text-2xl">
+      <div className="flex flex-col w-full items-center text-2xl">
         <h2>Powered by integrated research, design, development, and</h2>
         <h2>architecture... Backed by years of experience.</h2>
       </div>

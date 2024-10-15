@@ -3,7 +3,7 @@ import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
 function ProjectsSection() {
   return (
-    <div className="flex flex-col w-full h-auto  px-20 py-5 mt-40 items-center justify-center gap-10">
+    <div className="flex flex-col w-full h-auto  px-20 py-5  items-center justify-center gap-10">
       <div className="">
         <button className="flex items-center gap-3 py-2 px-5 bg-white rounded-3xl navButton text-black text-xl">
           projects <FaFreeCodeCamp style={{ fontSize: "1.5em" }} />
