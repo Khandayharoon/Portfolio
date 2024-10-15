@@ -23,8 +23,13 @@ function ProjectsSection() {
         </div>
       </div>
       <div className="w-full h-[600px] bg-red-950 rounded-2xl hover:backdrop-blur-lg">
-        <video className="w-full h-full object-cover rounded-2xl" autoPlay muted loop>
-          <source src={section1} type="video/mp4" autpplay m />
+        <video
+          className="w-full h-full object-cover rounded-2xl"
+          autoPlay
+          muted
+          loop
+        >
+          <source src={section1} type="video/mp4" />
         </video>
       </div>
       <div>
