@@ -1,6 +1,7 @@
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
+import exp1 from "../../assets/videos/exp1.mp4";
 function ProjectsSection() {
   return (
     <div className="flex flex-col w-full h-auto  px-20 py-5  items-center justify-center gap-10">
@@ -14,9 +15,24 @@ function ProjectsSection() {
       </div>
       <div className="flex flex-col gap-9">
         <div className=" w-full flex flex-wrap gap-4">
-          <div className="w-[900px] h-[600px] bg-red-400 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>
+          <div className="w-[900px] h-[600px] rounded-2xl relative shadow-lg">
+            <div className="hover:backdrop-blur-3xl w-[900px] h-[600px]  rounded-2xl">
+              <video
+                autoPlay
+                loop
+                muted
+                className=" w-full h-full object-cover rounded-2xl"
+              >
+                <source src={exp1} type="video/mp4"></source>
+              </video>
+            </div>
+            <div className="w-[900px] h-[600px] rounded-2xl  absolute top-0 hover:backdrop-blur-sm ">
+              
+            </div>
+          </div>
           <div className="w-[500px] h-[600px] bg-red-100 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>
         </div>
+
         <div className="w-full flex flex-wrap gap-4">
           <div className="w-[500px] h-[600px] bg-red-300 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>
           <div className="w-[900px] h-[600px] bg-red-800 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>

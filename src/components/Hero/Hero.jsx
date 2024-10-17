@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { PiTelegramLogoLight } from "react-icons/pi";
+import app1 from "../../assets/videos/app1.mp4";
+import website1 from "../../assets/videos/website1.mp4";
+import digitalexperiences1 from "../../assets/videos/digitalexperiences1.mp4"
 
 function Hero() {
   const [hoverSpan, setHoverSpan] = useState(null);
@@ -22,7 +25,16 @@ function Hero() {
               }`}
             ></span>
             {hoverSpan === "app" && (
-              <div className="w-40 h-60 backdrop-blur-md z-40 absolute top-full left-0 rounded-3xl"></div>
+              <div className="w-60 h-60 backdrop-blur-md z-40 mt-1 p-2 absolute top-full left-0 rounded-3xl">
+                <video
+                  className="w-full h-full object-cover rounded-3xl shadow-lg"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src={app1} type="video/mp4" />
+                </video>
+              </div>
             )}
           </span>
         </h1>
@@ -39,7 +51,16 @@ function Hero() {
               }`}
             ></span>
             {hoverSpan === "websites" && (
-              <div className="w-40 h-60 backdrop-blur-md z-40 absolute top-full left-0 rounded-3xl"></div>
+              <div className="w-80 h-60 backdrop-blur-md z-40 absolute p-2 top-full left-0 rounded-3xl ">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="w-full h-full object-cover rounded-3xl shadow-lg"
+                >
+                  <source src={website1} type="video/mp4"></source>
+                </video>
+              </div>
             )}
           </span>
           and{" "}
@@ -55,7 +76,16 @@ function Hero() {
               }`}
             ></span>
             {hoverSpan === "digital experiences" && (
-              <div className="w-40 h-60 backdrop-blur-md z-40 absolute top-full left-0 rounded-3xl"></div>
+              <div className="w-96 h-56 backdrop-blur-md z-40 p-2 absolute top-full left-0 rounded-3xl">
+                <video
+                  className="w-full h-full object-cover rounded-3xl shadow-lg"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src={digitalexperiences1} type="video/mp4" />
+                </video>
+              </div>
             )}
           </span>{" "}
           for Web2 and Web3.
@@ -103,3 +133,8 @@ function Hero() {
 }
 
 export default Hero;
+
+
+
+
+  // src="https://cdn.dribbble.com/userupload/17024534/file/original-7305870050e3811f75e2f786b1493d68.mp4"
