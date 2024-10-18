@@ -2,7 +2,10 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
 import exp1 from "../../assets/videos/exp1.mp4";
+import { useState } from "react";
+import { IoLogoReact } from "react-icons/io5";
 function ProjectsSection() {
+  const [hoverCard, setHoverCard] = useState(null);
   return (
     <div className="flex flex-col w-full h-auto  px-20 py-5  items-center justify-center gap-10">
       <div className="">
@@ -15,21 +18,53 @@ function ProjectsSection() {
       </div>
       <div className="flex flex-col gap-9">
         <div className=" w-full flex flex-wrap gap-4">
+          {/* Card One */}
           <div className="w-[900px] h-[600px] rounded-2xl relative shadow-lg">
             <div className="hover:backdrop-blur-3xl w-[900px] h-[600px]  rounded-2xl">
               <video
-                autoPlay
-                loop
-                muted
+                // autoPlay
+                // loop
+                // muted
                 className=" w-full h-full object-cover rounded-2xl"
               >
                 <source src={exp1} type="video/mp4"></source>
               </video>
             </div>
-            <div className="w-[900px] h-[600px] rounded-2xl  absolute top-0 hover:backdrop-blur-sm ">
-              
+            <div
+              className="w-[900px] h-[600px] rounded-2xl  absolute top-0 hover:backdrop-blur-md "
+              onMouseEnter={() => setHoverCard("card1")}
+              onMouseLeave={() => setHoverCard(null)}
+            >
+              {/* Details about Porject                */}
+              {hoverCard === "card1" && (
+                <div className="z-50 text-white absolute bottom-2 mb-5 ml-5">
+                  <div>
+                    <div className="h-12 w-12">
+                      <img
+                        src="https://klindos.jzitnik.dev/favicon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h2>PermissionLess</h2>
+                    </div>
+                    <div className="flex gap-2">
+                      <div>
+                        <IoLogoReact />
+                      </div>
+                      <div>skils</div>
+                      <div>skils</div>
+                    </div>
+                    <div>
+                      <p>Todo Application with Uniqe UIUX</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
+
+          {/* Card One */}
           <div className="w-[500px] h-[600px] bg-red-100 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>
         </div>
 
