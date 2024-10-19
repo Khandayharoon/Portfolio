@@ -8,7 +8,7 @@ function Myservices() {
   return (
     <div className="flex flex-col items-center w-full px-40 gap-14 mt-20 py-10">
       <h3 className="font-reader font-thin text-5xl">My Services</h3>
-      <div className="w-full text-center px-80 leading-4">
+      <div className="w-full text-center leading-4">
         <p className="text-3xl">
           Our primary focus regarding digital products is the user and their
           needs. To achieve great usability, we believe it is paramount to work
