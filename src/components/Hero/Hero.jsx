@@ -3,6 +3,7 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 import app1 from "../../assets/videos/app1.mp4";
 import website1 from "../../assets/videos/website1.mp4";
 import digitalexperiences1 from "../../assets/videos/digitalexperiences1.mp4"
+import hk from "../../assets/videos/hk.mp4";
 
 function Hero() {
   const [hoverSpan, setHoverSpan] = useState(null);
@@ -114,7 +115,17 @@ function Hero() {
               }`}
             ></span>
             {hoverSpan === "Haroon-Nissar-Khanday" && (
-              <div className="w-40 h-60 backdrop-blur-md z-40 absolute top-full left-0 rounded-3xl"></div>
+              // <div className="w-40 h-60 backdrop-blur-md z-40 absolute top-full left-0 rounded-3xl"></div>
+              <div className="w-96 h-56 backdrop-blur-md z-40 p-2 absolute top-full left-0 rounded-3xl">
+                <video
+                  className="w-full h-full object-cover rounded-3xl shadow-lg"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src={hk} type="video/mp4" />
+                </video>
+              </div>
             )}
           </span>
           , Web2, Web3 & Smart Contract Developer

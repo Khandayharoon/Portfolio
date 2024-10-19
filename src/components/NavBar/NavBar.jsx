@@ -61,7 +61,7 @@ export default function NavBar() {
         {/* Get In Touch Button */}
         <button className="py-2 px-8 bg-black rounded-3xl navButton text-white">
           {" "}
-          Get in touch{" "}
+          <a href="mailto:khandayharoon@gmail.com">Get in touch </a>
         </button>
       </div>
     </div>

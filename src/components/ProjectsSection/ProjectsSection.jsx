@@ -3,7 +3,7 @@ import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
 import exp1 from "../../assets/videos/exp1.mp4";
 import { useState } from "react";
-import { IoLogoReact } from "react-icons/io5";
+import Slideshow from "../Slideshow/Slideshow";
 function ProjectsSection() {
   const [hoverCard, setHoverCard] = useState(null);
   return (
@@ -37,26 +37,76 @@ function ProjectsSection() {
             >
               {/* Details about Porject                */}
               {hoverCard === "card1" && (
-                <div className="z-50 text-white absolute bottom-2 mb-5 ml-5">
+                <div className="z-50 text-white absolute bottom-4 mb-5 ml-5 cursor-pointer">
                   <div>
-                    <div className="h-12 w-12">
+                    <div className="h-20 w-20">
                       <img
                         src="https://klindos.jzitnik.dev/favicon.png"
                         alt=""
                       />
                     </div>
                     <div>
-                      <h2>PermissionLess</h2>
+                      <h2 className="font-reader-regular text-8xl">
+                        PermissionLess
+                      </h2>
                     </div>
-                    <div className="flex gap-2">
-                      <div>
-                        <IoLogoReact />
+                    <div className="flex  gap-3">
+                      {/* skill 1 */}
+                      <div className="bg-zinc-100 w-36 h-14 rounded-xl py-1 px-3 flex justify-between items-center">
+                        <div className="h-full">
+                          <img
+                            className=" h-full"
+                            src="/icons/reactjs.svg"
+                            alt="React Icon"
+                          />
+                        </div>
+                        <div>
+                          <h1 className="text-black font-reader-regular">
+                            React_Js
+                          </h1>
+                        </div>
                       </div>
-                      <div>skils</div>
-                      <div>skils</div>
+                      {/* skill 1 */}
+
+                      {/* skill 2 */}
+                      <div className="bg-zinc-100  h-14 rounded-xl  px-3 flex gap-1 justify-between items-center">
+                        <div className="h-full">
+                          <img
+                            className=" h-full"
+                            src="/icons/tailwindcss.svg"
+                            alt="Tailwindcss Icon"
+                          />
+                        </div>
+                        <div>
+                          <h1 className="text-black font-reader-regular">
+                            Tailwind CSS
+                          </h1>
+                        </div>
+                      </div>
+                      {/* skill 2 */}
+                      {/* skill 3 */}
+                      <div className="bg-zinc-100  h-14 rounded-xl  px-3 flex justify-between items-center">
+                        <div className="w-12 h-10">
+                          <img
+                            className=" w-12 h-10"
+                            src="/icons/framer-motion.svg"
+                            alt="Framer Motion Icon"
+                          />
+                        </div>
+                        <div>
+                          <h1 className="text-black font-reader-regular">
+                            Framer Motion
+                          </h1>
+                        </div>
+                      </div>
+                      {/* skill 3 */}
                     </div>
                     <div>
-                      <p>Todo Application with Uniqe UIUX</p>
+                      <p>
+                        Designed and developed the frontend of a gadget
+                        e-commerce website <br /> with responsive UI and smooth
+                        interactions . . .
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -65,7 +115,9 @@ function ProjectsSection() {
           </div>
 
           {/* Card One */}
-          <div className="w-[500px] h-[600px] bg-red-100 rounded-2xl hover:backdrop-blur-lg shadow-lg"></div>
+          <div className="w-[500px] h-[600px] bg-red-100 rounded-2xl hover:backdrop-blur-lg shadow-lg">
+            <Slideshow />
+          </div>
         </div>
 
         <div className="w-full flex flex-wrap gap-4">
