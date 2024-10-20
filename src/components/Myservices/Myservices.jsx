@@ -76,7 +76,20 @@ function Myservices() {
           <GrServices style={{ transform: "scaleX(-1)", fontSize: "1.5em" }} />
         </button>
       </div>{" "}
-      <div className="w-full h-screen bg-slate-500">{/* <Carousel /> */}</div>
+      <div className="w-full h-screen bg-slate-500 rounded-2xl shadow-lg">
+        {/* <Carousel /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover rounded-2xl shadow-lg"
+        >
+          <source
+            src="https://cdn.dribbble.com/userupload/15831578/file/original-4359d83379d26791fc85dd8825455865.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
+      </div>
     </div>
   );
 }

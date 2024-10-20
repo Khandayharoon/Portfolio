@@ -134,7 +134,7 @@ function ProjectsSection() {
               </video>
             </div>
           </div>
-          <div className="w-[900px] h-[600px] bg-red-800 rounded-2xl hover:backdrop-blur-3xl shadow-lg">
+          <div className=" relative w-[900px] h-[600px] bg-red-800 rounded-2xl hover:backdrop-blur-3xl shadow-lg">
             {/* ghxfhxfjhfjhjhxfjhh */}
             <div className="hover:backdrop-blur-3xl w-[900px] h-[600px]  rounded-2xl">
               {/* <video
