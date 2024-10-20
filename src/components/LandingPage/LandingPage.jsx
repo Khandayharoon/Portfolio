@@ -5,7 +5,7 @@ import Myservices from "../Myservices/Myservices";
 import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import ParticleAnimation from "../Try/ParticleAnimation";
-
+import AnimatedSVG from "../Try/AnimatedSVG ";
 
 import WorkWithUS from "../WorkWithUS/WorkWithUS";
 

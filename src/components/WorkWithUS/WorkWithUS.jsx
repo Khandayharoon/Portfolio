@@ -1,10 +1,11 @@
-import React from "react";
+
 import { GiRecycle } from "react-icons/gi";
+import AnimatedSVG from "../Try/AnimatedSVG ";
 
 function WorkWithUS() {
   return (
     <div className="w-full min-h-screen px-40  flex flex-col items-center justify-center">
-      <div className="w-full h-full bg-slate-500 flex flex-col items-center justify-center gap-2">
+      <div className="w-full h-full flex flex-col items-center justify-center gap-2">
         <div className="text-4xl">
           <h2>Let&apos;s Build Engaging Experiences</h2>
         </div>
@@ -24,19 +25,26 @@ function WorkWithUS() {
         <div>
           <h2 className="text-2xl">A Typical Project Roadmap</h2>
         </div>
-        <div className="w-full h-auto flex gap-3 px-4">
-          <div className="w-1/3 h-60 bg-red-500 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-500 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-500 shadow-lg rounded-3xl"></div>
-        </div>
-        <div className="w-full h-auto flex flex-col items-center mt-12 gap-10">
-          <div className="w-1/3 h-60 bg-red-200 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-300 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-400 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-500 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-600 shadow-lg rounded-3xl"></div>
-          <div className="w-1/3 h-60 bg-red-700 shadow-lg rounded-3xl"></div>
-          <div className="w-1/2 h-10 bg-red-900 shadow-lg rounded-3xl"></div>
+        <div className="w-full relative">
+          {/* <AnimatedSVG /> */}
+          <div className="w-full">
+            <div className="w-full h-auto flex gap-3 px-4">
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl mt-20"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl mt-36"></div>
+            </div>
+            {/* <AnimatedSVG /> */}
+            <div className="w-full h-auto flex flex-col items-center mt-12 gap-10">
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+              <div className="w-1/2 h-10 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
+            </div>
+          </div>
+          <AnimatedSVG />
         </div>
       </div>
       {/* Work with us  */}

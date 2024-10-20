@@ -2,14 +2,14 @@ import { useState } from "react";
 import { PiTelegramLogoLight } from "react-icons/pi";
 import app1 from "../../assets/videos/app1.mp4";
 import website1 from "../../assets/videos/website1.mp4";
-import digitalexperiences1 from "../../assets/videos/digitalexperiences1.mp4"
+import digitalexperiences1 from "../../assets/videos/digitalexperiences1.mp4";
 import hk from "../../assets/videos/hk.mp4";
 
 function Hero() {
   const [hoverSpan, setHoverSpan] = useState(null);
 
   return (
-    <div className="flex flex-col items-center mt-20 gap-20 relative">
+    <div className="flex flex-col items-center justify-center mt-20 gap-20 relative">
       {/* Hero text */}
       <div className="font-reader-regular flex flex-col items-center text-black text-5xl gap-4 ">
         <h1>
@@ -145,7 +145,4 @@ function Hero() {
 
 export default Hero;
 
-
-
-
-  // src="https://cdn.dribbble.com/userupload/17024534/file/original-7305870050e3811f75e2f786b1493d68.mp4"
+// src="https://cdn.dribbble.com/userupload/17024534/file/original-7305870050e3811f75e2f786b1493d68.mp4"

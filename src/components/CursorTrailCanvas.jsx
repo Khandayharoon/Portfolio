@@ -1,71 +1,5 @@
-// "use client";
-// import { useEffect, useState } from "react";
-
-// const usePointerPosition = () => {
-//     const [position, setPosition] = useState({ x: 0, y: 0 });
-
-//     useEffect(() => {
-//         const handlePointerMove = (event: PointerEvent) => {
-//             setPosition({ x: event.clientX, y: event.clientY });
-//         };
-
-//         window.addEventListener("pointermove", handlePointerMove);
-
-//         return () => {
-//             window.removeEventListener("pointermove", handlePointerMove);
-//         };
-//     }, []);
-
-//     return position;
-// };
-
-// const MouseTrail = () => {
-//     const position = usePointerPosition();
-//     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-
-//     useEffect(() => {
-//         const updateDimensions = () => {
-//             setDimensions({
-//                 width: window.innerWidth,
-//                 height: window.innerHeight,
-//             });
-//         };
-
-//         updateDimensions();
-//         window.addEventListener("resize", updateDimensions);
-
-//         return () => window.removeEventListener("resize", updateDimensions);
-//     }, []);
-
-//     const trailSize = 500; // Diameter of the trail
-//     const scale = Math.min(dimensions.width, dimensions.height) / 1300; // Adjust scale based on screen size
-
-//     return (
-//         <div
-//             className="fixed z-[1]  mix-blend-difference rounded-full pointer-events-none hidden md:block"
-//             style={{
-//                 width: `${trailSize}px`,
-//                 height: `${trailSize}px`,
-//                 left: `${position.x - trailSize / 2}px`,
-//                 top: `${position.y - trailSize / 2}px`,
-//                 transform: `scale(${scale})`,
-//             }}
-//         >
-//             <div className="absolute inset-0 bg-white/20 invert rounded-full scale-125"></div>
-//             <div className="absolute inset-0 bg-black scale-150  rounded-full border-[100px]  shadow-emerald-500    "></div>
-//         </div>
-//     );
-// };
-
-// export default MouseTrail;
 
 import { useEffect, useRef } from "react";
-
-// export interface CursorTrailCanvasProps {
-//     color;
-//     className?: string;
-//     style?: CSSProperties;
-// }
 
 export default function CursorTrailCanvas(props) {
   const refCanvas = useRef(null);
@@ -93,10 +27,6 @@ export default function CursorTrailCanvas(props) {
 
 import { RefObject } from "react";
 
-// export type CursorTrail = {
-//     ref: RefObject<HTMLCanvasElement>;
-//     color?: string;
-// };
 
 export function cursorTrail(props) {
   const colorRaw = getComputedStyle(document.documentElement).getPropertyValue(
@@ -135,12 +65,6 @@ export function cursorTrail(props) {
     }
   }
 
-  // type LineProps = {
-  //     spring;
-  //     friction?: number;
-  //     size?: number;
-  //     cursorPosition?: { x: number; y: number };
-  // };
 
   class Line {
     spring;
