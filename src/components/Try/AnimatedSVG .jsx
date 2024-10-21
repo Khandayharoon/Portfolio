@@ -1,7 +1,7 @@
 import "../../App.css"; // Import your CSS
 
 const AnimatedSVG = () => (
-  <div className="w-full h-full absolute -top-64 z-10">
+  <div className="w-full h-full absolute -top-64 -z-10">
     <svg
       viewBox="0 1 1000 1500"
       fill="none"
