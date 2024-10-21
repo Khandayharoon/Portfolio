@@ -14,7 +14,7 @@
 @font-face {
   font-family: "Reader Regular Pro";
   src: url("/fonts/reader-regular-pro.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -26,7 +26,6 @@
 }
 
 :root {
-  font-family: "Reader Pro", sans-serif;
   line-height: 1.5;
   color-scheme: light dark;
   background-color: rgb(238, 236, 234);
