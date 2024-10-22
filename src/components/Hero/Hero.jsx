@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className="flex flex-col items-center justify-center mt-20 gap-20 relative">
       {/* Hero text */}
-      <div className="font-reader-regular flex flex-col items-center text-black text-5xl gap-4 ">
+      <div className="font-reader-regular flex flex-col text-center text-black md:text-5xl gap-4 ">
         <h1>
           I design seamless, user-friendly{" "}
           <span
@@ -94,13 +94,13 @@ function Hero() {
       </div>
 
       {/* Secondary content */}
-      <div className="flex flex-col w-full items-center text-2xl">
+      <div className="flex flex-col w-full items-center justify-center text-center md:text-2xl">
         <h2>Powered by integrated research, design, development, and</h2>
         <h2>architecture... Backed by years of experience.</h2>
       </div>
 
       {/* Introduction */}
-      <div className="flex flex-col items-center text-3xl">
+      <div className="flex flex-col items-center justify-center text-center md:text-3xl">
         <h3>
           Hi! I&apos;m{" "}
           <span

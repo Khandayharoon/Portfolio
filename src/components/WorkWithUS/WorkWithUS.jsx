@@ -12,7 +12,7 @@ import { SlRocket } from "react-icons/sl";
 import { BsGraphUpArrow } from "react-icons/bs";
 function WorkWithUS() {
   return (
-    <div className="w-full min-h-screen px-40  flex flex-col items-center justify-center">
+    <div className="w-full min-h-screen sm:px-40  flex flex-col items-center justify-center">
       <div className="w-full h-full flex flex-col items-center justify-center gap-2">
         <div className="text-4xl">
           <h2>Let&apos;s Build Engaging Experiences</h2>
@@ -260,7 +260,7 @@ function WorkWithUS() {
         </div>
       </div>
       {/* Work with us  */}
-      <div className="bg-white text-black w-[50vw] h-20 mb-32 flex items-center justify-between px-3 rounded-full">
+      <div className="bg-white text-black w-[50vw] h-20 mb-32 flex flex-col  sm:flex-row items-center justify-between sm:px-3 rounded-full">
         <div className="bg-black w-32 h-32"></div>
         <div>
           <h1 className="font-reader-regular text-3xl">Questions?</h1>

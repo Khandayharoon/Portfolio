@@ -6,7 +6,7 @@ function Myservices() {
   // State to track which card is hovered
   const [hoveredCard, setHoveredCard] = useState(null);
   return (
-    <div className="flex flex-col items-center w-full px-40 gap-14 mt-20 py-10">
+    <div className="flex flex-col items-center w-full sm:px-40 gap-14 mt-20 py-10">
       <h3 className="font-reader font-thin text-5xl">My Services</h3>
       <div className="w-full text-center leading-4">
         <p className="text-3xl">

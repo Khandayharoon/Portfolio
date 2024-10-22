@@ -2,7 +2,7 @@
 
 function Discover() {
   return (
-    <div className="w-full h-screen px-40">
+    <div className="w-full h-screen sm:px-40">
       <div className="w-full h-full bg-slate-400">
         <div>
           <h2>Discover Real-Life Stories</h2>
