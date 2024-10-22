@@ -6,18 +6,17 @@ import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import ParticleAnimation from "../Try/ParticleAnimation";
 
-
 import WorkWithUS from "../WorkWithUS/WorkWithUS";
 
 function LandingPage() {
   return (
     <div>
       <NavBar />
-      <div>
-        <div>
+      <div className="w-full flex items-center justify-center ">
+        <div className="w-full">
           <ParticleAnimation />
         </div>
-        <div className="absolute top-10 left-48 mt-16">
+        <div className="w-full absolute top-10  mt-16 ">
           <Hero />
         </div>
       </div>

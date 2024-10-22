@@ -1,5 +1,5 @@
 // components/Slideshow.jsx
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 
 const Slideshow = () => {
   // Dynamically generate image paths from /div-images/1.jpg to /div-images/42.jpg

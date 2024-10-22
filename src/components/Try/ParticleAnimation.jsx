@@ -1,4 +1,4 @@
-import  { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const ParticleAnimation = () => {
   const canvasRef = useRef(null);
@@ -77,7 +77,7 @@ const ParticleAnimation = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: "block" , width:"98vw"}} />;
+  return <canvas ref={canvasRef} style={{ display: "block", width: "100%" }} />;
 };
 
 export default ParticleAnimation;
