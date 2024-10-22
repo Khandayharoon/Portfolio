@@ -10,7 +10,7 @@ import WorkWithUS from "../WorkWithUS/WorkWithUS";
 
 function LandingPage() {
   return (
-    <div>
+    <div className="mx-2">
       <NavBar />
       <div className="w-full flex items-center justify-center ">
         <div className="w-full">

@@ -118,6 +118,9 @@ function ProjectsSection() {
             >
               {hoverCard === "card4" && (
                 <div className="z-50 text-white absolute bottom-4 mb-5 ml-5 cursor-pointer">
+                  <div className="h-20 w-20">
+                    <img src="https://klindos.jzitnik.dev/favicon.png" alt="" />
+                  </div>
                   <h2 className="font-reader-regular text-2xl md:text-4xl">
                     PermissionLess
                   </h2>
@@ -141,7 +144,20 @@ function ProjectsSection() {
                       />
                       <h1 className="text-black">Tailwind CSS</h1>
                     </div>
+                    {/* Skill 3 */}
+                    <div className="bg-zinc-100 px-4 h-14 rounded-xl flex items-center gap-2">
+                      <img
+                        src="/icons/framer-motion.svg"
+                        className="h-full"
+                        alt="Framer Motion"
+                      />
+                      <h1 className="text-black">Framer Motion</h1>
+                    </div>
                   </div>
+                  <p className="mt-2">
+                    Designed and developed the frontend of a gadget e-commerce
+                    website with responsive UI and smooth interactions...
+                  </p>
                 </div>
               )}
             </div>

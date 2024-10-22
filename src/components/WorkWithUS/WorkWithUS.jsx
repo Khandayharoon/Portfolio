@@ -12,20 +12,20 @@ import { SlRocket } from "react-icons/sl";
 import { BsGraphUpArrow } from "react-icons/bs";
 function WorkWithUS() {
   return (
-    <div className="w-full min-h-screen sm:px-40  flex flex-col items-center justify-center">
+    <div className="w-full h-auto  sm:px-40 flex flex-col items-center justify-center">
       <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-        <div className="text-4xl">
+        <div className="text-2xl sm:text-4xl">
           <h2>Let&apos;s Build Engaging Experiences</h2>
         </div>
         <div className="px-10 text-center">
-          <p className="text-xl">
+          <p className="sm:text-xl">
             Prioritization is a crucial and often daunting task in product
             development. Especially when it&apos;s unclear how user&apos;s needs
             align with business goals. Dinghy is here to help!
           </p>
         </div>
         <div>
-          <button className="flex items-center gap-3 py-2 px-8 bg-black rounded-3xl text-white text-xl">
+          <button className="flex items-center gap-3 py-1 px-4 sm:py-2 sm:px-8 bg-black rounded-3xl text-white sm:text-xl">
             see a typical project roadmap
             <GiRecycle style={{ transform: "scaleX(-1)", fontSize: "1.5em" }} />
           </button>
@@ -38,9 +38,9 @@ function WorkWithUS() {
         <div className="w-full relative mb-32">
           {/* <AnimatedSVG /> */}
           <div className="w-full">
-            <div className="w-full h-auto flex gap-3 px-4">
+            <div className="w-full h-auto flex flex-col sm:flex-row gap-3 px-4">
               {/* divOne */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3">
                 <div>
                   <HiOutlineSparkles
                     style={{
@@ -63,7 +63,7 @@ function WorkWithUS() {
               </div>
               {/* DivOne */}
               {/* dnfjsndfs */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3 mt-20">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3 sm:mt-20">
                 <div>
                   <LuSquareStack
                     style={{
@@ -86,7 +86,7 @@ function WorkWithUS() {
                 </div>
               </div>
               {/* nlskclsc */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3  mt-36">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex flex-col items-center justify-center px-3  sm:mt-36">
                 <div>
                   <PiArrowsSplit
                     style={{
@@ -112,7 +112,7 @@ function WorkWithUS() {
             </div>
             {/* <AnimatedSVG /> */}
             <div className="w-full h-auto flex flex-col items-center mt-12 gap-10">
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
                 <div>
                   <GiThink
                     style={{
@@ -137,7 +137,7 @@ function WorkWithUS() {
               <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
               <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl"></div>
               <div className="w-1/2 h-10 bg-[#EDEBE9] shadow-lg rounded-3xl"></div> */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
                 <div>
                   <TbCubePlus
                     style={{
@@ -157,7 +157,7 @@ function WorkWithUS() {
                 </div>
               </div>
               {/* 2 */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
                 <div>
                   <TfiHeadphoneAlt
                     style={{
@@ -176,7 +176,7 @@ function WorkWithUS() {
                 </div>
               </div>
               {/* 3 */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
                 <div>
                   <ImLoop2
                     style={{
@@ -195,7 +195,7 @@ function WorkWithUS() {
                 </div>
               </div>
               {/* 4 */}
-              <div className="w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
+              <div className="w-full sm:w-1/3 h-60 bg-[#EDEBE9] shadow-lg rounded-3xl flex items-center justify-center px-3 gap-3">
                 <div>
                   <PiHandshakeFill
                     style={{
@@ -260,7 +260,7 @@ function WorkWithUS() {
         </div>
       </div>
       {/* Work with us  */}
-      <div className="bg-white text-black w-[50vw] h-20 mb-32 flex flex-col  sm:flex-row items-center justify-between sm:px-3 rounded-full">
+      <div className="bg-white text-black w-[50vw] h-20 mb-32 flex flex-col sm:flex-row items-center justify-between sm:px-3 rounded-full">
         <div className="bg-black w-32 h-32"></div>
         <div>
           <h1 className="font-reader-regular text-3xl">Questions?</h1>
@@ -283,12 +283,15 @@ function WorkWithUS() {
           </span>
         </div>
         <div>
-          <h2 className="font-reader-regular text-5xl">Why work with us</h2>
+          <h2 className="font-reader-regular text-2xl sm:text-5xl">
+            Why work with us
+          </h2>
         </div>
       </div>
-      <div className="w-full h-96 bg-slate-900 flex items-center justify-between px-5 rounded-3xl mb-20">
-        <div className="w-1/3 flex flex-col items-center justify-center text-white gap-3">
-          <div className="w-32 h-32 rounded-full bg-slate-600 flex items-center justify-center">
+      <div className="w-full  flex py-3 flex-col gap-20 md:flex-row items-center justify-between px-5 rounded-3xl mb-20">
+        <div className="w-full sm:w-1/3 bg-slate-900 rounded-3xl flex flex-col items-center justify-center text-white gap-3 py-2 px-2">
+          {/* <div className="w-full sm:w-1/3 flex flex-col items-center justify-center text-white gap-3"> */}
+          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-slate-600 flex items-center justify-center">
             <div>
               <SlRocket
                 style={{
@@ -306,17 +309,18 @@ function WorkWithUS() {
             </h3>
           </div>
           <div>
-            <p className="text-center  px-3">
+            <p className="text-center">
               Our team is at your disposal and with dedicated people of contact
               we are ready to respond promptly through your preferred
               communication channels. To keep you well-informed we offer
               insights into our workflows, capacities and deliverables.
             </p>
           </div>
+          {/* </div> */}
         </div>
-
-        <div className="w-1/3 flex flex-col items-center justify-center text-white gap-3">
-          <div className="w-32 h-32 rounded-full bg-slate-600 flex items-center justify-center">
+        <div className="w-full sm:w-1/3 bg-slate-900 rounded-3xl flex flex-col items-center justify-center text-white gap-3 py-2 px-2">
+          {/* <div className="w-full sm:w-1/3 flex flex-col items-center justify-center text-white gap-3"> */}
+          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-slate-600 flex items-center justify-center">
             <PiHandshakeFill
               style={{
                 color: "white", // Icon color
@@ -339,10 +343,11 @@ function WorkWithUS() {
               technical terms to ensure stakeholder alignment..
             </p>
           </div>
+          {/* </div> */}
         </div>
-
-        <div className="w-1/3 flex flex-col items-center justify-center text-white gap-3">
-          <div className="w-32 h-32 rounded-full bg-slate-600 flex items-center justify-center">
+        <div className="w-full sm:w-1/3 bg-slate-900 rounded-3xl flex flex-col items-center justify-center text-white gap-3 py-2 px-2">
+          {/* <div className="w-full sm:w-1/3 flex flex-col items-center justify-center text-white gap-3"> */}
+          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-slate-600 flex items-center justify-center">
             <BsGraphUpArrow
               style={{
                 color: "white", // Icon color
@@ -363,6 +368,7 @@ function WorkWithUS() {
               to the needs of everyone involved.
             </p>
           </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

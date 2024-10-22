@@ -8,8 +8,8 @@ function Myservices() {
   return (
     <div className="flex flex-col items-center w-full sm:px-40 gap-14 mt-20 py-10">
       <h3 className="font-reader font-thin text-5xl">My Services</h3>
-      <div className="w-full text-center leading-4">
-        <p className="text-3xl">
+      <div className="w-full text-center">
+        <p className="text-md sm:text-3xl">
           Our primary focus regarding digital products is the user and their
           needs. To achieve great usability, we believe it is paramount to work
           very closely with your target group and learn from them. The following
@@ -24,10 +24,10 @@ function Myservices() {
           safety of your digital assets.
         </p>
       </div>
-      <div className="relative w-full h-80 flex items-center justify-center">
+      <div className="relative w-full sm:h-80 flex flex-col gap-4 sm:flex-row  items-center justify-center">
         {/* UX Audit Card */}
         <div
-          className={`w-1/4 h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
+          className={`w-full sm:w-1/3 h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
             hoveredCard === "audit" ? "hover:scale-110 hover:z-50" : ""
           } ${hoveredCard && hoveredCard !== "audit" ? "blur-sm" : ""}`}
           onMouseEnter={() => setHoveredCard("audit")}
@@ -42,7 +42,7 @@ function Myservices() {
 
         {/* Usability Testing Card */}
         <div
-          className={`w-1/3 h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
+          className={`w-full sm:w-1/3  h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
             hoveredCard === "testing" ? "hover:scale-110 hover:z-50" : ""
           } ${hoveredCard && hoveredCard !== "testing" ? "blur-sm" : ""}`}
           onMouseEnter={() => setHoveredCard("testing")}
@@ -57,7 +57,7 @@ function Myservices() {
 
         {/* Discovery Research Card */}
         <div
-          className={`w-1/4 h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
+          className={`w-full sm:w-1/3  h-full shadow-lg flex flex-col items-center justify-center relative rounded-2xl transition-transform duration-300 bg-[#EDEBE9] ${
             hoveredCard === "research" ? "hover:scale-110 hover:z-50" : ""
           } ${hoveredCard && hoveredCard !== "research" ? "blur-sm" : ""}`}
           onMouseEnter={() => setHoveredCard("research")}
@@ -76,13 +76,13 @@ function Myservices() {
           <GrServices style={{ transform: "scaleX(-1)", fontSize: "1.5em" }} />
         </button>
       </div>{" "}
-      <div className="w-full h-screen bg-slate-500 rounded-2xl shadow-lg">
+      <div className="w-full h-60  md:h-screen bg-slate-500 rounded-2xl shadow-lg">
         {/* <Carousel /> */}
         <video
           autoPlay
           loop
           muted
-          className="w-full h-full object-cover rounded-2xl shadow-lg"
+          className="w-full h-60  md:h-full object-cover rounded-2xl shadow-lg"
         >
           <source
             src="https://cdn.dribbble.com/userupload/15831578/file/original-4359d83379d26791fc85dd8825455865.mp4"
