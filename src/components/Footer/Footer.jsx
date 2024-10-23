@@ -1,16 +1,29 @@
-
+import "../../components/NavBar/./navBar.css";
+// import { GiHamburger } from "react-icons/gi";
+// import { useNavigate } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="w-full min-h-screen sm:px-40 flex flex-col items-center justify-center">
-      <div className="w-full h-96 bg-slate-500 text-white flex justify-between sm:px-20">
-        <div className="flex bg-slate-800 p-4">
-          <h2>logo</h2>
+    <div className="w-full  sm:px-40 flex flex-col items-center justify-center">
+      <div className="w-full h-96 text-black/80 flex flex-col md:flex-row items-center justify-between sm:px-20">
+        <div className="flex p-4">
+          <div>
+            {/* Logo */}
+            <div className="flex sm:space-x-2 text-[15rem] md:text-9xl items-center logoBar">
+              <div className="logo">
+                <i className="fa-brands fa-studiovinari"></i>
+              </div>
+              <div className="text-3xl space-x-1">
+                <i className="fa-solid fa-h "></i>
+                <i className="fa-solid fa-k"></i>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
+        <div className="flex w-44 h-96 bg-slate-800 p-4">
+          <ul className="flex flex-col text-xl footerLinks items-center">
             <li>
               <a href="#">Projects</a>
             </li>
@@ -42,8 +55,8 @@ function Footer() {
         </div>
 
         {/* important links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
+        <div className="flex p-4 w-44 h-96 bg-slate-800">
+          <ul className="flex flex-col text-xl footerLinks">
             <li>
               <a href="#">Imprint</a>
             </li>
@@ -57,8 +70,8 @@ function Footer() {
         </div>
 
         {/* social media links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
+        <div className="flex p-4 w-44 h-96 bg-slate-800">
+          <ul className="flex flex-col text-xl footerLinks">
             <li>
               <a href="#">LinkedIn</a>
             </li>
@@ -81,7 +94,7 @@ function Footer() {
         </div>
       </div>
       {/* last  part div */}
-      <div className="flex gap-10">
+      <div className="flex flex-col md:flex-row gap-10 mt-10">
         <div className="bg-slate-400 text-white">
           <h1>Adresss</h1>
           <p>

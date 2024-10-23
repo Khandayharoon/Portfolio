@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import "./navBar.css";
 import { GiHamburger } from "react-icons/gi";
 export default function NavBar() {
@@ -26,35 +27,74 @@ export default function NavBar() {
               {" "}
               <a className="text-xl" href="">
                 {" "}
-                Projects{" "}
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  className="text-xl cursor-pointer"
+                >
+                  Projects
+                </Link>
               </a>{" "}
             </li>
             <li>
               {" "}
               <a className="text-xl" href="">
                 {" "}
-                Services{" "}
+                {/* Services{" "} */}
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  className="text-xl cursor-pointer"
+                >
+                  Services
+                </Link>
               </a>{" "}
             </li>
             <li>
               {" "}
               <a className="text-xl" href="">
                 {" "}
-                About{" "}
+                {/* About{" "} */}
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="text-xl cursor-pointer"
+                >
+                  About
+                </Link>
               </a>{" "}
             </li>
             <li>
               {" "}
               <a className="text-xl" href="">
                 {" "}
-                Collaboration{" "}
+                {/* Collaboration{" "} */}
+                <Link
+                  to="collaboration"
+                  smooth={true}
+                  duration={500}
+                  className="text-xl cursor-pointer"
+                >
+                  Collaboration
+                </Link>
               </a>{" "}
             </li>
             <li>
               {" "}
               <a className="text-xl" href="">
                 {" "}
-                Blog{" "}
+                {/* Blog{" "} */}
+                <Link
+                  to="blog"
+                  smooth={true}
+                  duration={500}
+                  className="text-xl cursor-pointer"
+                >
+                  Blog
+                </Link>
               </a>{" "}
             </li>
           </ul>
@@ -97,35 +137,74 @@ export default function NavBar() {
                 {" "}
                 <a className="text-xl" href="">
                   {" "}
-                  Projects{" "}
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    className="text-xl cursor-pointer"
+                  >
+                    Projects
+                  </Link>
                 </a>{" "}
               </li>
               <li>
                 {" "}
                 <a className="text-xl" href="">
                   {" "}
-                  Services{" "}
+                  {/* Services{" "} */}
+                  <Link
+                    to="services"
+                    smooth={true}
+                    duration={500}
+                    className="text-xl cursor-pointer"
+                  >
+                    Services
+                  </Link>
                 </a>{" "}
               </li>
               <li>
                 {" "}
                 <a className="text-xl" href="">
                   {" "}
-                  About{" "}
+                  {/* About{" "} */}
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    className="text-xl cursor-pointer"
+                  >
+                    About
+                  </Link>
                 </a>{" "}
               </li>
               <li>
                 {" "}
                 <a className="text-xl" href="">
                   {" "}
-                  Collaboration{" "}
+                  {/* Collaboration{" "} */}
+                  <Link
+                    to="collaboration"
+                    smooth={true}
+                    duration={500}
+                    className="text-xl cursor-pointer"
+                  >
+                    Collaboration
+                  </Link>
                 </a>{" "}
               </li>
               <li>
                 {" "}
                 <a className="text-xl" href="">
                   {" "}
-                  Blog{" "}
+                  {/* Blog{" "} */}
+                  <Link
+                    to="blog"
+                    smooth={true}
+                    duration={500}
+                    className="text-xl cursor-pointer"
+                  >
+                    Blog
+                  </Link>
                 </a>{" "}
               </li>
             </ul>
@@ -142,3 +221,74 @@ export default function NavBar() {
     </div>
   );
 }
+
+// import { Link } from "react-scroll";
+// import { useState } from "react";
+// import { GiHamburger } from "react-icons/gi";
+// import "./navBar.css";
+
+// export default function NavBar() {
+//   const [openNavBar, setOpenNavBar] = useState(false);
+
+//   return (
+//     <div className="relative mt-10">
+//       <div className="flex justify-between items-center top-5 sticky backdrop-blur-lg md:mx-20 py-1 rounded-3xl sm:px-5 z-50">
+//         {/* Logo */}
+//         <div className="flex sm:space-x-2 text-7xl items-center logoBar">
+//           <div className="logo">
+//             <i className="fa-brands fa-studiovinari"></i>
+//           </div>
+//         </div>
+
+//         {/* Navbar Links */}
+//         <ul className="hidden md:flex space-x-7 navLinks items-center">
+//           <li>
+//             <Link
+//               to="projects"
+//               smooth={true}
+//               duration={500}
+//               className="text-xl cursor-pointer"
+//             >
+//               Projects
+//             </Link>
+//           </li>
+//           <li>
+//             <Link
+//               to="services"
+//               smooth={true}
+//               duration={500}
+//               className="text-xl cursor-pointer"
+//             >
+//               Services
+//             </Link>
+//           </li>
+//           <li>
+//             <Link
+//               to="about"
+//               smooth={true}
+//               duration={500}
+//               className="text-xl cursor-pointer"
+//             >
+//               About
+//             </Link>
+//           </li>
+//           <li>
+//             <Link
+//               to="work"
+//               smooth={true}
+//               duration={500}
+//               className="text-xl cursor-pointer"
+//             >
+//               Collaboration
+//             </Link>
+//           </li>
+//         </ul>
+
+//         {/* Hamburger Menu for Mobile */}
+//         <button onClick={() => setOpenNavBar(!openNavBar)}>
+//           <GiHamburger className="w-10 h-10 text-black" />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
