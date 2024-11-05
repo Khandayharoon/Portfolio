@@ -27,3 +27,16 @@
     transition: all linear 300ms ease-out;
 }
 
+
+.footerLinks li{
+    padding: 2px 15px;
+    border-radius: 9px;
+    align-items: center;
+}
+.footerLinks li:hover{
+    background-color: green;
+    color: white;
+    align-items: center;
+    transition: all linear 300ms ease-out;
+}
+

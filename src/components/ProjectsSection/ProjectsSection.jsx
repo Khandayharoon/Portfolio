@@ -3,6 +3,7 @@ import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
 import exp1 from "../../assets/videos/exp1.mp4";
 import walking from "../../assets/videos/walking.mp4";
+import card4 from "../../assets/images/card4.png"
 import { useState } from "react";
 import Slideshow from "../Slideshow/Slideshow";
 function ProjectsSection() {
@@ -107,8 +108,9 @@ function ProjectsSection() {
 
           <div className="w-full md:w-[700px] lg:w-[900px] h-[300px] md:h-[500px] rounded-2xl shadow-lg relative">
             <img
-              src="https://cdn.dribbble.com/userupload/14406138/file/original-392809e3cdb8768201afcea348ac3260.png"
-              className="w-full h-full object-cover rounded-2xl"
+              // src="https://cdn.dribbble.com/userupload/14406138/file/original-392809e3cdb8768201afcea348ac3260.png"
+              src={card4}
+              className="h-full w-full rounded-2xl"
               alt=""
             />
             <div

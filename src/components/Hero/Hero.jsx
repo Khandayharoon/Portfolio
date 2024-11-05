@@ -21,8 +21,8 @@ function Hero() {
           >
             apps,
             <span
-              className={`absolute left-0 bottom-0 h-[2px] bg-black transition-all duration-300 ${
-                hoverSpan === "app" ? "w-full" : "w-0"
+              className={`absolute left-0 bottom-0 h-[2px] bg-black/50 transition-all duration-300 ${
+                hoverSpan === "app" ? "w-full bg-black " : "w-0"
               }`}
             ></span>
             {hoverSpan === "app" && (

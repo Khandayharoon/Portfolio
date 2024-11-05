@@ -20,9 +20,15 @@ function LandingPage() {
           <Hero />
         </div>
       </div>
-      <ProjectsSection />
-      <Myservices />
-      <WorkWithUS />
+      <div id="projects">
+        <ProjectsSection />
+      </div>
+      <div id="services">
+        <Myservices />
+      </div>
+      <div id="about">
+        <WorkWithUS />
+      </div>
       <Discover />
       <Footer />
     </div>

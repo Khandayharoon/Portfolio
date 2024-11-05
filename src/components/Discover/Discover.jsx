@@ -17,9 +17,9 @@ function Discover() {
             insight into our thought process.
           </p>
         </div>
-        <div className="w-full h-96 flex flex-col sm:flex-row gap-10 items-center justify-center">
-          <div className="w-1/2 h-full bg-[#EDEBE9] shadow-lg rounded-2xl"></div>
-          <div className="w-1/2 h-full bg-[#EDEBE9] shadow-lg rounded-2xl "></div>
+        <div className="w-full h-[70vh] sm:h-96 flex flex-col sm:flex-row gap-10 items-center justify-center px-3">
+          <div className=" w-full sm:w-1/2 h-full bg-[#EDEBE9] shadow-lg rounded-2xl"></div>
+          <div className="w-full  sm:w-1/2 h-full bg-[#EDEBE9] shadow-lg rounded-2xl "></div>
         </div>
       </div>
     </div>

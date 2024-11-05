@@ -1,88 +1,107 @@
-
+import "../../components/NavBar/./navBar.css";
 
 function Footer() {
   return (
-    <div className="w-full min-h-screen sm:px-40 flex flex-col items-center justify-center">
-      <div className="w-full h-96 bg-slate-500 text-white flex justify-between sm:px-20">
-        <div className="flex bg-slate-800 p-4">
-          <h2>logo</h2>
+    <>
+      <div className="flex flex-col sm:flex-row sm:px-40 sm:gap-x-14 mt-5">
+        {/* Logo */}
+        <div className="flex sm:space-x-2 text-[15rem] md:text-9xl justify-center items-center logoBar">
+          <div>
+            <i className="fa-brands fa-studiovinari hover:text-green-600"></i>
+          </div>
+          <div className=" text-5xl sm:text-7xl space-x-1  hover:text-green-600">
+            <i className="fa-solid fa-h "></i>
+            <i className="fa-solid fa-k"></i>
+          </div>
         </div>
+        <div className=" flex flex-col sm:flex-row text-center items-center justify-center gap-x-14 ">
+          {/* div1 */}
+          <div className="flex w-44 h-96 ">
+            {/* bg-slate-400 */}
+            <ul className="flex flex-col text-xl footerLinks items-center p-4">
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Collaboration</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Podcast</a>
+              </li>
+              <li>
+                <a href="#">Glossary</a>
+              </li>
+              <li>
+                <a href="#">Newsletter</a>
+              </li>
+              <li>
+                <a href="#">Tech Stack</a>
+              </li>
+            </ul>
+          </div>
+          {/* div2 */}
+          <div>
+            <div className="flex p-4 h-96">
+              <ul className="flex flex-col text-xl footerLinks p-4">
+                <li>
+                  <a href="#">Imprint</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Data Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* div3 */}
 
-        {/* links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Collaboration</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Podcast</a>
-            </li>
-            <li>
-              <a href="#">Glossary</a>
-            </li>
-            <li>
-              <a href="#">Newsletter</a>
-            </li>
-            <li>
-              <a href="#">Tech Stack</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* important links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
-            <li>
-              <a href="#">Imprint</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Data Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* social media links */}
-        <div className="flex bg-slate-800 p-4">
-          <ul className="flex flex-col gap-1">
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#">X Twitter</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">Dribble</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">WhatsApp</a>
-            </li>
-          </ul>
+          <div className="flex p-4 w-44 h-96 -mt-60 sm:mt-0">
+            <ul className="flex flex-col text-xl footerLinks p-4">
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#">X Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">Dribble</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">WhatsApp</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      {/* last  part div */}
-      <div className="flex gap-10">
-        <div className="bg-slate-400 text-white">
+      <InnerFooter />
+    </>
+  );
+}
+
+export default Footer;
+
+function InnerFooter() {
+  return (
+    <div className="mb-96 sm:mb-0 sm:px-40">
+      <div className="flex flex-col md:flex-row  gap-y-10 sm:gap-x-10">
+        <div className="">
           <h1>Adresss</h1>
           <p>
             Blumenstraße 77 63069 Offenbach am Main Sitz: Offenbach am Main
@@ -90,7 +109,7 @@ function Footer() {
             Steuernummer: 035 231 32565
           </p>
         </div>
-        <div className="bg-slate-400 text-white">
+        <div className="">
           <p>
             We are enthusiastically committed to supporting GDPR and make it a
             top priority to rigorously adhere to data privacy regulations,
@@ -98,11 +117,13 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="bg-slate-400 text-white mt-10 w-1/2  flex items-center justify-center ">
-        <h1>Made with love and Passion By HK aka! Haroon Nissar Khanday</h1>
+      <div className="w-full  flex flex-col items-center text-center justify-center my-10">
+        <h1>
+          Made with love and Passion By HK aka!{" "}
+          <span className="text-green-900 text-3xl font-semibold">Haroon Nissar Khanday</span>
+        </h1>
+        <h2>A Kashmiri 🍁 Full Stack Developer</h2>
       </div>
     </div>
   );
 }
-
-export default Footer;
