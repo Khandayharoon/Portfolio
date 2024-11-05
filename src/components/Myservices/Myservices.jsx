@@ -1,6 +1,7 @@
 import { useState } from "react"; // Import useState to manage hover state
 import { GrServices } from "react-icons/gr";
 // import Carousel from "../Carousel/Carousel";
+import doctor from "../../assets/videos/doctor.mp4";
 
 function Myservices() {
   // State to track which card is hovered
@@ -85,7 +86,8 @@ function Myservices() {
           className="w-full h-60  md:h-full object-cover rounded-2xl shadow-lg"
         >
           <source
-            src="https://cdn.dribbble.com/userupload/15831578/file/original-4359d83379d26791fc85dd8825455865.mp4"
+            // src="https://cdn.dribbble.com/userupload/15831578/file/original-4359d83379d26791fc85dd8825455865.mp4"
+            src={doctor}
             type="video/mp4"
           ></source>
         </video>
