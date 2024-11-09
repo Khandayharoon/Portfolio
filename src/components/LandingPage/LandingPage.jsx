@@ -4,6 +4,7 @@ import Hero from "../Hero/Hero";
 import Myservices from "../Myservices/Myservices";
 import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
+import Skills from "../Skills/Skills";
 import ParticleAnimation from "../Try/ParticleAnimation";
 
 import WorkWithUS from "../WorkWithUS/WorkWithUS";
@@ -20,15 +21,18 @@ function LandingPage() {
           <Hero />
         </div>
       </div>
+
       <div id="projects">
         <ProjectsSection />
       </div>
+      <Skills direction="left"/>
       <div id="services">
         <Myservices />
       </div>
       <div id="about">
         <WorkWithUS />
       </div>
+      {/* <Skills direction="up" /> */}
       <Discover />
       <Footer />
     </div>
