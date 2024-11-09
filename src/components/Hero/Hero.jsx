@@ -144,5 +144,3 @@ function Hero() {
 }
 
 export default Hero;
-
-// src="https://cdn.dribbble.com/userupload/17024534/file/original-7305870050e3811f75e2f786b1493d68.mp4"

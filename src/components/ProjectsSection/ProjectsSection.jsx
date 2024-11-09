@@ -3,7 +3,7 @@ import { MdReplyAll } from "react-icons/md";
 import section1 from "../../assets/videos/section1.mp4";
 import exp1 from "../../assets/videos/exp1.mp4";
 import walking from "../../assets/videos/walking.mp4";
-import card4 from "../../assets/images/card4.png"
+import card4 from "../../assets/images/card4.png";
 import { useState } from "react";
 import Slideshow from "../Slideshow/Slideshow";
 function ProjectsSection() {
@@ -46,7 +46,7 @@ function ProjectsSection() {
                   <div className="h-20 w-20">
                     <img src="https://klindos.jzitnik.dev/favicon.png" alt="" />
                   </div>
-                  <h2 className="font-reader-regular text-2xl md:text-4xl">
+                  <h2 className="font-reader-regular font-semibold text-2xl md:text-4xl">
                     PermissionLess
                   </h2>
                   <div className="flex gap-3 mt-2 flex-wrap">
@@ -57,7 +57,7 @@ function ProjectsSection() {
                         className="h-full"
                         alt="React"
                       />
-                      <h1 className="text-black">React.js</h1>
+                      <h1 className="text-black hidden md:block">React.js</h1>
                     </div>
                     {/* Skill 2 */}
                     <div className="bg-zinc-100 px-4 h-14 rounded-xl flex items-center gap-2">
@@ -66,7 +66,9 @@ function ProjectsSection() {
                         className="h-full"
                         alt="Tailwind CSS"
                       />
-                      <h1 className="text-black">Tailwind CSS</h1>
+                      <h1 className="text-black hidden md:block">
+                        Tailwind CSS
+                      </h1>
                     </div>
                     {/* Skill 3 */}
                     <div className="bg-zinc-100 px-4 h-14 rounded-xl flex items-center gap-2">
@@ -75,7 +77,9 @@ function ProjectsSection() {
                         className="h-full"
                         alt="Framer Motion"
                       />
-                      <h1 className="text-black">Framer Motion</h1>
+                      <h1 className="text-black hidden md:block">
+                        Framer Motion
+                      </h1>
                     </div>
                   </div>
                   <p className="mt-2">
@@ -107,12 +111,7 @@ function ProjectsSection() {
           </div>
 
           <div className="w-full md:w-[700px] lg:w-[900px] h-[300px] md:h-[500px] rounded-2xl shadow-lg relative">
-            <img
-              // src="https://cdn.dribbble.com/userupload/14406138/file/original-392809e3cdb8768201afcea348ac3260.png"
-              src={card4}
-              className="h-full w-full rounded-2xl"
-              alt=""
-            />
+            <img src={card4} className="h-full w-full rounded-2xl" alt="" />
             <div
               className="absolute top-0 w-full h-full rounded-2xl hover:backdrop-blur-md"
               onMouseEnter={() => setHoverCard("card4")}
@@ -135,7 +134,7 @@ function ProjectsSection() {
                         className="h-full"
                         alt="React"
                       />
-                      <h1 className="text-black">React.js</h1>
+                      <h1 className="text-black hidden md:block">React.js</h1>
                     </div>
                     {/* Skill 2 */}
                     <div className="bg-zinc-100 px-4 h-14 rounded-xl flex items-center gap-2">
@@ -144,7 +143,9 @@ function ProjectsSection() {
                         className="h-full"
                         alt="Tailwind CSS"
                       />
-                      <h1 className="text-black">Tailwind CSS</h1>
+                      <h1 className="text-black hidden md:block">
+                        Tailwind CSS
+                      </h1>
                     </div>
                     {/* Skill 3 */}
                     <div className="bg-zinc-100 px-4 h-14 rounded-xl flex items-center gap-2">
@@ -153,7 +154,9 @@ function ProjectsSection() {
                         className="h-full"
                         alt="Framer Motion"
                       />
-                      <h1 className="text-black">Framer Motion</h1>
+                      <h1 className="text-black hidden md:block">
+                        Framer Motion
+                      </h1>
                     </div>
                   </div>
                   <p className="mt-2">

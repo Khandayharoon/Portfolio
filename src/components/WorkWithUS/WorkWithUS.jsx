@@ -10,6 +10,7 @@ import { ImLoop2 } from "react-icons/im";
 import { PiHandshakeFill } from "react-icons/pi";
 import { SlRocket } from "react-icons/sl";
 import { BsGraphUpArrow } from "react-icons/bs";
+import ques from "../../assets/videos/ques.mp4";
 function WorkWithUS() {
   return (
     <div className="w-full h-auto  sm:px-40 flex flex-col items-center justify-center">
@@ -260,8 +261,16 @@ function WorkWithUS() {
         </div>
       </div>
       {/* Work with us  */}
-      <div className="bg-white text-black w-[50vw] h-20 mb-32 flex flex-col sm:flex-row items-center justify-between sm:px-3 rounded-full">
-        <div className="bg-black w-32 h-32"></div>
+      <div className="sm:bg-white text-black w-[50vw] mb-32 flex flex-col gap-y-3 sm:flex-row items-center justify-between sm:px-3 rounded-full">
+        <div className="bg-black w-36 h-36 overflow-hidden rounded-lg  mb-2 sm:-mt-4 origin-top-left rotate-12 ">
+          <video
+            className="w-full h-full object-cover"
+            muted
+            loop
+            autoPlay
+            src={ques}
+          ></video>
+        </div>
         <div>
           <h1 className="font-reader-regular text-3xl">Questions?</h1>
         </div>
@@ -275,7 +284,8 @@ function WorkWithUS() {
           </button>
         </div>
       </div>
-      <div className="my-10 flex flex-col items-center">
+
+      <div className="my-10 flex flex-col gap-y-1 items-center">
         {" "}
         <div>
           <span className="bg-white px-3 py-1 rounded-full">
@@ -290,7 +300,6 @@ function WorkWithUS() {
       </div>
       <div className="w-full  flex py-3 flex-col gap-20 md:flex-row items-center justify-between px-5 rounded-3xl mb-20">
         <div className="w-full sm:w-1/3 bg-slate-900 rounded-3xl flex flex-col items-center justify-center text-white gap-3 py-2 px-2">
-          {/* <div className="w-full sm:w-1/3 flex flex-col items-center justify-center text-white gap-3"> */}
           <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-slate-600 flex items-center justify-center">
             <div>
               <SlRocket

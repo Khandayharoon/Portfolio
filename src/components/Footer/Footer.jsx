@@ -100,14 +100,13 @@ export default Footer;
 function InnerFooter() {
   return (
     <div className="mb-96 sm:mb-0 sm:px-40">
-      <div className="flex flex-col md:flex-row  gap-y-10 sm:gap-x-10">
+      <div className="flex flex-col gap-y-10 sm:gap-x-10">
         <div className="">
-          <h1>Adresss</h1>
+          <h1 className="text-green-800">Adresss</h1>
           <p>
-            Blumenstraße 77 63069 Offenbach am Main Sitz: Offenbach am Main
-            Handelsregister Amtsgericht Offenbach am Main, HRB 55121
-            Steuernummer: 035 231 32565
+            Srinagar Kashmir 🍁
           </p>
+          <h4>Khandayharoon@gmail.com</h4>
         </div>
         <div className="">
           <p>
@@ -120,7 +119,7 @@ function InnerFooter() {
       <div className="w-full  flex flex-col items-center text-center justify-center my-10">
         <h1>
           Made with love and Passion By HK aka!{" "}
-          <span className="text-green-900 text-3xl font-semibold">Haroon Nissar Khanday</span>
+          <span className="text-green-900 text-3xl font-semibold block">Haroon Nissar Khanday</span>
         </h1>
         <h2>A Kashmiri 🍁 Full Stack Developer</h2>
       </div>
